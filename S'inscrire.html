@@ -1,0 +1,75 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="projets.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="s'inscrire.css" />
+    <title>Inscription - Énergies Renouvelables au Maroc</title>
+</head>
+<body>
+    <header class="header">
+        <img src="Logo.png" alt="Logo" class="image-haut-gauche" width="100" height="100">
+        <h1>Energies Renouvelables au Maroc</h1>
+    </header>
+        <nav>
+            <a href="index.html">Accueil</a> 
+            <a href="Actualités.html">Actualités</a>
+            <a href="S'inscrire.html">S'inscrire</a> 
+            <a href="contact.html">Contact</a>
+            <a href="Projets.html">Projets</a>
+        </nav>
+    
+
+    <main>
+        <fieldset>
+            <legend>S'inscrire</legend>
+            <p>Remplissez le formulaire pour reçevoir actualités.</p>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="nom">Votre nom :</label></td>
+                        <td><input type="text" name="nom" id="nom" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Votre prénom :</label></td>
+                        <td><input type="text" name="prenom" id="prenom" required /></td>
+                    </tr> 
+                    <tr>
+                        <td><label for="date_naissance">Date de naissance :</label></td>
+                        <td><input type="date" name="date_naissance" id="date_naissance" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="homme">Homme</label></td>
+                        <td><input type="radio" id="homme" name="sexe" value="homme" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="femme">Femme</label></td>
+                        <td><input type="radio" id="femme" name="sexe" value="femme" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pays">Votre pays :</label></td>
+                        <td>
+                            <select id="pays" name="pays" required>
+                                <option value="france">France</option>
+                                <option value="maroc">Maroc</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail :</label></td>
+                        <td><input type="email" id="mail" name="mail" placeholder="votre mail" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Mot de passe :</label></td>
+                        <td><input type="password" id="password" name="password" required /></td>
+                    </tr>
+                </table>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </fieldset>
+    </main>
+
+</body>
+</html>
